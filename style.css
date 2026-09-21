@@ -185,15 +185,67 @@ h2{
   letter-spacing:.06em;
   color:var(--ink);
 }
-/* home page */
-.home{
-  min-height:100vh;
-  display:flex;
-  flex-direction:column;
-  justify-content:center;
+/* home page — the full invitation, so it runs long rather than filling one screen */
+.home .logo{width:min(12rem, 48vw);margin-bottom:1.4rem}
+/* "Traitors" is a long word in a wide face; cap it so it clears the gutters */
+.home h1{font-size:clamp(2.5rem, 12vw, 4.5rem)}
+.subtitle{
+  margin:0 0 .5rem;
+  font-family:"IM Fell English", "Spectral", Georgia, serif;
+  font-style:italic;
+  font-size:1.15rem;
+  line-height:1.4;
+  color:var(--grey);
+  text-wrap:balance;
 }
-.home .logo{width:min(15rem, 56vw);margin-bottom:1.6rem}
-.home h1{font-size:clamp(2.75rem, 14vw, 5.25rem)}
+.itinerary{
+  margin:2.2rem 0 2.2rem;
+  padding:1.7rem 0 1.5rem;
+  border-top:1px solid var(--ink);
+  border-bottom:1px solid var(--ink);
+}
+.itinerary h2{
+  margin:0 0 .45rem;
+  font-family:"Cinzel Decorative", "Spectral", Georgia, serif;
+  font-style:normal;
+  font-weight:700;
+  font-size:.9rem;
+  letter-spacing:.2em;
+  text-transform:uppercase;
+  color:var(--ink);
+}
+.itinerary .sched + h2{margin-top:1.7rem}
+.itinerary .date{
+  display:block;
+  margin-top:.15rem;
+  /* Spectral, not IM Fell: the dates matter, and old-style figures made 25 and 27 hard to read */
+  font-family:"Spectral", Georgia, serif;
+  font-style:italic;
+  font-weight:400;
+  font-size:1.05rem;
+  font-variant-numeric:lining-nums;
+  letter-spacing:.02em;
+  text-transform:none;
+  color:var(--grey);
+}
+.sched{
+  list-style:none;
+  margin:0;
+  padding:0;
+}
+.sched li{
+  padding:.28rem 0;
+  line-height:1.45;
+  text-wrap:balance;
+}
+.sched .t{
+  color:var(--grey);
+  font-variant-numeric:tabular-nums;
+  white-space:nowrap;
+}
+.sched .t::after{content:":"}
+/* the midnight rows sit apart, as they do on the printed running order */
+.sched .apart{margin-top:.7rem}
 @media (prefers-reduced-motion: reduce){
   body::before{animation:none}
   .clock.urgent{animation:none}
