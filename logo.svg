@@ -34,6 +34,4 @@
 </g>
 <circle cx="256" cy="166" r="4.5" fill="#F4F1EC"/>
 
-<!-- one drop, off the point -->
-<path d="M256 357 C262 367 263 372 256 375 C249 372 250 367 256 357Z" fill="#A50F17"/>
 </svg>
