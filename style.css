@@ -1,0 +1,222 @@
+:root{
+  --pitch:#06040A;
+  --crypt:#140A11;
+  --velvet:#2A0810;
+  --velvet-deep:#0C0509;
+  --blood:#8E1218;
+  --blood-bright:#B61C22;
+  --bone:#D8CCB6;
+  --bone-dim:#857B6C;
+  --brass:#9A7B33;
+  --accent:#9A2226;
+  --glow:154,34,38;
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;background:var(--pitch)}
+body{
+  position:relative;
+  margin:0;
+  min-height:100vh;
+  background:
+    radial-gradient(ellipse 120% 30rem at 50% -4%, #3A0D18 0%, var(--velvet) 34%, var(--crypt) 68%, var(--velvet-deep) 100%);
+  color:var(--bone);
+  font-family:"Spectral", Georgia, "Times New Roman", serif;
+  font-size:1.1875rem;
+  line-height:1.6;
+}
+/* film grain */
+body::before{
+  content:"";
+  position:fixed;
+  inset:-50%;
+  z-index:0;
+  pointer-events:none;
+  opacity:.16;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='260' height='260'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  animation:grain 900ms steps(1) infinite;
+}
+@keyframes grain{
+  0%{transform:translate(0,0)}
+  25%{transform:translate(-3%,2%)}
+  50%{transform:translate(2%,-3%)}
+  75%{transform:translate(-2%,-2%)}
+  100%{transform:translate(3%,1%)}
+}
+/* vignette — the room closing in */
+body::after{
+  content:"";
+  position:fixed;
+  inset:0;
+  z-index:0;
+  pointer-events:none;
+  background:radial-gradient(ellipse 88% 72% at 50% 42%, transparent 38%, rgba(4,2,6,.62) 82%, rgba(4,2,6,.92) 100%);
+}
+.brief{
+  position:relative;
+  z-index:1;
+  max-width:34rem;
+  margin:0 auto;
+  padding:2.5rem 1.5rem 4rem;
+  text-align:center;
+}
+.marquee{
+  margin:0 0 1.5rem;
+  font-family:"Cinzel Decorative", "Spectral", Georgia, serif;
+  font-size:1rem;
+  font-weight:700;
+  letter-spacing:.2em;
+  text-transform:uppercase;
+  color:var(--brass);
+  opacity:.82;
+}
+.spotlight{
+  position:relative;
+  width:min(17rem, 72vw);
+  margin:0 auto 1.25rem;
+  border-radius:50%;
+  background:radial-gradient(circle at 50% 40%, rgba(216,204,182,.15) 0%, rgba(154,34,38,.07) 46%, rgba(216,204,182,0) 72%);
+}
+.spotlight svg{
+  display:block;
+  width:100%;
+  height:auto;
+  filter:saturate(.62) contrast(1.12) brightness(.82) drop-shadow(0 12px 18px rgba(0,0,0,.75));
+}
+.lead-in{
+  margin:0;
+  font-family:"IM Fell English", "Spectral", Georgia, serif;
+  font-style:italic;
+  letter-spacing:.02em;
+  color:var(--bone-dim);
+}
+h1{
+  margin:.1em 0 .45em;
+  font-family:"Cinzel Decorative", "Spectral", Georgia, serif;
+  font-weight:900;
+  font-size:clamp(2.6rem, 13vw, 4.75rem);
+  line-height:1.05;
+  color:var(--accent);
+  text-wrap:balance;
+  text-shadow:
+    0 0 1px rgba(0,0,0,.9),
+    0 0 18px rgba(var(--glow),.42),
+    0 0 46px rgba(var(--glow),.2);
+  animation:candle 7s ease-in-out infinite;
+}
+/* slow guttering candlelight — deliberately gentle, never a strobe */
+@keyframes candle{
+  0%,100%{opacity:1}
+  41%{opacity:1}
+  47%{opacity:.88}
+  52%{opacity:.97}
+  58%{opacity:.84}
+  64%{opacity:1}
+}
+p{margin:0 0 1.25rem}
+.deadline{
+  position:relative;
+  margin:2rem 0;
+  padding:1.25rem 1rem 1.1rem;
+  border-top:1px solid rgba(142,18,24,.72);
+  border-bottom:1px solid rgba(142,18,24,.72);
+  background:linear-gradient(180deg, rgba(142,18,24,.09), transparent 62%);
+}
+/* it drips */
+.deadline::after{
+  content:"";
+  position:absolute;
+  left:0;
+  right:0;
+  bottom:-11px;
+  height:13px;
+  pointer-events:none;
+  background-repeat:no-repeat;
+  background-image:
+    radial-gradient(5px 11px at 15% 0, var(--blood) 99%, transparent 100%),
+    radial-gradient(3.5px 7px at 34% 0, var(--blood) 99%, transparent 100%),
+    radial-gradient(4.5px 13px at 61% 0, var(--blood) 99%, transparent 100%),
+    radial-gradient(3px 6px at 82% 0, var(--blood) 99%, transparent 100%);
+  opacity:.78;
+}
+.deadline-label{margin:0;color:var(--bone-dim)}
+.clock{
+  margin:.35rem 0 0;
+  font-family:"Cinzel Decorative", "Spectral", Georgia, serif;
+  font-weight:700;
+  font-size:2rem;
+  line-height:1.1;
+  color:var(--bone);
+  font-variant-numeric:tabular-nums;
+  letter-spacing:.02em;
+  min-height:1.1em;
+  text-shadow:0 0 14px rgba(216,204,182,.18);
+}
+/* final hour */
+.clock.urgent{
+  color:var(--blood-bright);
+  text-shadow:0 0 16px rgba(182,28,34,.6);
+  animation:pulse 2s ease-in-out infinite;
+}
+@keyframes pulse{
+  0%,100%{opacity:1}
+  50%{opacity:.62}
+}
+.clock.over{
+  color:var(--blood-bright);
+  font-size:1.6rem;
+  text-shadow:0 0 20px rgba(182,28,34,.55);
+}
+h2{
+  margin:0 0 .5rem;
+  font-family:"IM Fell English", "Spectral", Georgia, serif;
+  font-weight:400;
+  font-style:italic;
+  font-size:1em;
+  letter-spacing:.04em;
+  color:var(--bone-dim);
+}
+.criteria{
+  list-style:none;
+  margin:0 0 2.25rem;
+  padding:0;
+}
+.criteria li{
+  padding:.55rem 0;
+  font-weight:600;
+}
+.criteria li + li{border-top:1px dotted rgba(216,204,182,.2)}
+.threat{
+  margin-bottom:.5rem;
+  font-size:1.3125rem;
+  line-height:1.4;
+  color:var(--blood-bright);
+  text-wrap:balance;
+  text-shadow:0 0 22px rgba(142,18,24,.42);
+}
+.signoff{
+  margin:0;
+  font-family:"Cinzel Decorative", "Spectral", Georgia, serif;
+  font-weight:700;
+  font-size:1.25rem;
+  letter-spacing:.06em;
+  color:var(--brass);
+}
+/* home page */
+.home{
+  min-height:100vh;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+}
+.home h1{
+  color:var(--blood-bright);
+  font-size:clamp(2.75rem, 14vw, 5.25rem);
+  text-shadow:
+    0 0 1px rgba(0,0,0,.9),
+    0 0 22px rgba(var(--glow),.42),
+    0 0 60px rgba(var(--glow),.24);
+}
+@media (prefers-reduced-motion: reduce){
+  body::before{animation:none}
+  h1,.clock.urgent{animation:none}
+}
