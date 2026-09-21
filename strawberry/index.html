@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Strawberry | Dress to Kill</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700;900&family=IM+Fell+English:ital@0;1&family=Spectral:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../style.css">
+<style>/* "Strawberry" is one long word in a wide display face; it overflows the shared h1 scale */
+h1{font-size:clamp(2.2rem, 10.5vw, 3.75rem)}</style>
+</head>
+<body>
+<main class="brief">
+  <img class="logo" src="../logo.svg" alt="Dress to Kill">
+  <p class="marquee">Dress to Kill dinner</p>
+
+  <div class="spotlight">
+    <svg viewBox="0 0 240 240" role="img" aria-label="A ripe strawberry">
+      <ellipse cx="120" cy="222" rx="78" ry="9" fill="#000" opacity=".28"/>
+      <path d="M120 216 C92 198 58 166 52 126 C47 92 82 72 120 72 C158 72 193 92 188 126 C182 166 148 198 120 216Z" fill="#C11F2C"/>
+      <path d="M120 72 C158 72 193 92 188 126 C182 166 148 198 120 216 C146 186 168 142 160 110 C152 84 136 74 120 72Z" fill="#8A0F19" opacity=".55"/>
+      <ellipse cx="82" cy="118" rx="9" ry="22" transform="rotate(24 82 118)" fill="#fff" opacity=".15"/>
+      <g fill="#F2D98A">
+        <ellipse cx="97" cy="104" rx="3" ry="4.4" transform="rotate(-18 97 104)"/>
+        <ellipse cx="121" cy="98" rx="3" ry="4.4"/>
+        <ellipse cx="145" cy="104" rx="3" ry="4.4" transform="rotate(18 145 104)"/>
+        <ellipse cx="166" cy="120" rx="3" ry="4.4" transform="rotate(28 166 120)"/>
+        <ellipse cx="85" cy="134" rx="3" ry="4.4" transform="rotate(-28 85 134)"/>
+        <ellipse cx="109" cy="126" rx="3" ry="4.4" transform="rotate(-8 109 126)"/>
+        <ellipse cx="133" cy="126" rx="3" ry="4.4" transform="rotate(8 133 126)"/>
+        <ellipse cx="156" cy="144" rx="3" ry="4.4" transform="rotate(24 156 144)"/>
+        <ellipse cx="97" cy="158" rx="3" ry="4.4" transform="rotate(-22 97 158)"/>
+        <ellipse cx="121" cy="152" rx="3" ry="4.4"/>
+        <ellipse cx="144" cy="160" rx="3" ry="4.4" transform="rotate(20 144 160)"/>
+        <ellipse cx="109" cy="182" rx="2.6" ry="3.8" transform="rotate(-14 109 182)"/>
+        <ellipse cx="132" cy="182" rx="2.6" ry="3.8" transform="rotate(14 132 182)"/>
+        <ellipse cx="121" cy="202" rx="2.4" ry="3.4"/>
+      </g>
+      <g fill="#3F7A2B">
+        <path d="M120 80 C104 66 82 60 62 64 C82 76 100 84 120 88Z"/>
+        <path d="M120 80 C136 66 158 60 178 64 C158 76 140 84 120 88Z"/>
+        <path d="M120 78 C108 62 94 52 76 48 C86 66 100 76 116 86Z"/>
+        <path d="M120 78 C132 62 146 52 164 48 C154 66 140 76 124 86Z"/>
+      </g>
+      <path d="M113 74 C112 56 114 42 120 30 L131 34 C124 46 122 58 123 74Z" fill="#5C9C3E"/>
+    </svg>
+  </div>
+
+  <p class="lead-in">Your featured ingredient is</p>
+  <h1>Strawberry</h1>
+
+  <p>You must make a dessert using strawberry for the Dress to Kill dinner tonight.</p>
+
+  <div class="deadline" aria-live="polite">
+    <p class="deadline-label">You have until 2pm ET on Saturday to make the dish.</p>
+    <p class="clock" id="clock"></p>
+  </div>
+
+  <h2>You will be judged on</h2>
+  <ul class="criteria">
+    <li>Theme</li>
+    <li>Flavor</li>
+    <li>Creativity</li>
+    <li>Cleanup</li>
+  </ul>
+
+  <p class="threat">Teams that fail the challenge are up for murder tonight.</p>
+  <p class="signoff">Good luck, players.</p>
+</main>
+<script src="../clock.js"></script>
+</body>
+</html>

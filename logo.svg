@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-labelledby="logoTitle">
+<title id="logoTitle">A dagger at the centre of a round dinner table set for eight</title>
+<defs>
+  <!-- one place setting: the curved chair back, and the seat in front of it -->
+  <g id="dtk-chair">
+    <path d="M226 51 A30 30 0 0 1 286 51" fill="none" stroke="currentColor" stroke-width="11" stroke-linecap="round"/>
+    <rect x="234" y="65" width="44" height="38" rx="9" fill="none" stroke="currentColor" stroke-width="11"/>
+  </g>
+</defs>
+
+<!-- the table -->
+<circle cx="256" cy="256" r="132" fill="none" stroke="currentColor" stroke-width="11"/>
+<circle cx="256" cy="256" r="114" fill="none" stroke="currentColor" stroke-width="4"/>
+
+<!-- eight places; the diagonals turn the seat onto its point -->
+<g>
+  <use href="#dtk-chair"/>
+  <use href="#dtk-chair" transform="rotate(45 256 256)"/>
+  <use href="#dtk-chair" transform="rotate(90 256 256)"/>
+  <use href="#dtk-chair" transform="rotate(135 256 256)"/>
+  <use href="#dtk-chair" transform="rotate(180 256 256)"/>
+  <use href="#dtk-chair" transform="rotate(225 256 256)"/>
+  <use href="#dtk-chair" transform="rotate(270 256 256)"/>
+  <use href="#dtk-chair" transform="rotate(315 256 256)"/>
+</g>
+
+<!-- the dagger -->
+<g fill="currentColor">
+  <path d="M256 150 C264 150 270 157 270 167 C270 180 265 190 263 205 L263 226 L249 226 L249 205 C247 190 242 180 242 167 C242 157 248 150 256 150Z"/>
+  <path d="M204 224 L308 224 L308 236 L204 236Z"/>
+  <rect x="200" y="219" width="9" height="22" rx="2"/>
+  <rect x="303" y="219" width="9" height="22" rx="2"/>
+  <path d="M242 236 C244 272 249 318 253 342 L256 360 L259 342 C263 318 268 272 270 236Z"/>
+</g>
+<circle cx="256" cy="166" r="4.5" fill="#F4F1EC"/>
+
+<!-- one drop, off the point -->
+<path d="M256 357 C262 367 263 372 256 375 C249 372 250 367 256 357Z" fill="#A50F17"/>
+</svg>
