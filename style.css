@@ -64,8 +64,9 @@ body::before{
 }
 .spotlight{
   position:relative;
-  width:min(15rem, 66vw);
-  margin:0 auto 1.25rem;
+  /* a plain colour swatch now, so it sits smaller than the old illustrations */
+  width:min(11rem, 46vw);
+  margin:0 auto 1.35rem;
 }
 /* the ingredients keep their colour; everything around them stays monochrome */
 .spotlight svg{
