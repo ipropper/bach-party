@@ -10,19 +10,18 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700;900&family=IM+Fell+English:ital@0;1&family=Spectral:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
-<noscript><style>.tabs{display:none}#panel-hearsay{display:block}#draw{display:none}</style></noscript>
+<noscript><style>.topnav{display:none}#panel-hearsay{display:block}#draw{display:none}</style></noscript>
 </head>
 <body>
+<nav class="topnav" role="tablist" aria-label="Sections">
+  <button class="tab" type="button" id="tab-itinerary" role="tab" aria-selected="true" aria-controls="panel-itinerary">Itinerary</button>
+  <button class="tab" type="button" id="tab-hearsay" role="tab" aria-selected="false" aria-controls="panel-hearsay">Hearsay &plus; Legends</button>
+</nav>
 <main class="brief home">
   <img class="logo" src="logo.svg" alt="Traitors">
   <p class="lead-in">You are invited to</p>
   <h1>Traitors</h1>
   <p class="subtitle">A Jack &amp; Jill Party hosted by Ian and Susie</p>
-
-  <nav class="tabs" role="tablist" aria-label="Sections">
-    <button class="tab" type="button" id="tab-itinerary" role="tab" aria-selected="true" aria-controls="panel-itinerary">Itinerary</button>
-    <button class="tab" type="button" id="tab-hearsay" role="tab" aria-selected="false" aria-controls="panel-hearsay">Hearsay &plus; Legends</button>
-  </nav>
 
   <section class="panel itinerary" id="panel-itinerary" role="tabpanel" aria-labelledby="tab-itinerary">
     <h2>Day 1 <span class="date">Fri Sept 25</span></h2>
