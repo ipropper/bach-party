@@ -23,7 +23,7 @@ var MYSTERIES = [
     body: [
       "Love the creepy vibe here. Found an old tome in the library, and the first page I opened to said:",
       { quote: "I grasped his throat to silence him, and in a moment he lay dead at my feet. I gazed on my victim, and my heart swelled with exultation and hellish triumph; clapping my hands, I exclaimed, &lsquo;I too can create desolation; my enemy is not invulnerable; this death will carry despair to him, and a thousand other miseries shall torment and destroy him.&rsquo;" },
-      "Opened a few more. Blank, or said similar things. Then I found the old inn&rsquo;s guest book with a pressed red rose between the pages. My signature is in it. Dated 1901. Probably some kind of prank? Weird one, though."
+      "Opened a few more. Blank, or said similar things. Pretty weird right?"
     ]
   },
   {
@@ -50,18 +50,9 @@ var MYSTERIES = [
     image: "images/sigil.svg",
     status: "unsolved",
     body: [
-      "I took the basement tour, but it was pretty lame. It was mostly a guy dressed as the grim reaper doing a super fake Elizabeth Holmes voice. He lost his voice halfway through, and that&rsquo;s when I left.",
+      "I took the basement tour, but it was pretty lame. It was just a teenager pretending to have a deep devil voice, idk what was worse the impression or the cracking. He lost his voice halfway through, and that&rsquo;s when I left.",
       "On the way out, I noticed a path sectioned off deeper in. So of course I skipped the barrier. Ha! I was looking for something creepy, and I was not disappointed. The basement felt endless. It took me almost 10 minutes to reach the final room. Chamber. I&rsquo;m calling it a chamber.",
-      "It&rsquo;s covered in symbols, the same one from the map, everywhere. Dried rose petals all over the floor, and a lockbox in the middle. I tried it a few times but couldn&rsquo;t crack it, so I decided to high-tail it out of there. The place just made me feel uneasy, like I was being watched, ya know?"
-    ]
-  },
-  {
-    title: "What&rsquo;s That by the Pond?",
-    meta: "Sat, Sept 26 &middot; 6:50 PM",
-    image: "images/fish.svg",
-    status: "unsolved",
-    body: [
-      "Something washed up by the pond while I was walking back for dinner. It&rsquo;s a fish, I think. Too many eyes. They were all looking at me. Caretaker says the pond&rsquo;s &ldquo;always had those.&rdquo;"
+      "There were candles lighting the whole path, and a lockbox in the middle. I tried it a few times but couldn&rsquo;t crack it, so I decided to high-tail it out of there. The place just made me feel uneasy, like I was being watched, ya know?"
     ]
   },
   {
@@ -70,7 +61,7 @@ var MYSTERIES = [
     image: "images/brick.svg",
     status: "unsolved",
     body: [
-      "I was sitting by the koi when I noticed a loose brick in the wall. I pulled it out and found a small note. In MY handwriting. It just said &ldquo;RUN.&rdquo;"
+      "I was sitting by the koi when I noticed a small note. In MY handwriting. It just said &ldquo;RUN.&rdquo;"
     ]
   },
   {
