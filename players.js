@@ -69,9 +69,28 @@ var PLAYERS = [
     ]
   },
   { name: "Phil", slug: "phil", role: "traitor", src: "players/player-9.jpg" },
-  { name: "Bailey", slug: "bailey", role: "faithful", src: "players/player-10.jpg" },
-  { name: "Ada", slug: "ada", role: "faithful", src: "players/player-11.jpg" },
-  { name: "Steph", slug: "steph", role: "traitor", src: "players/player-12.jpg" },
+  {
+    name: "Bailey", slug: "bailey", role: "faithful", src: "players/player-10.jpg",
+    death: "Banishment",
+    timeline: [
+      { media: "clip-1.jpg" },
+      { media: "clip-2.jpg" }
+    ]
+  },
+  {
+    name: "Ada", slug: "ada", role: "faithful", src: "players/player-11.jpg",
+    death: "First blood!",
+    timeline: [
+      { media: "clip-1.jpg" }
+    ]
+  },
+  {
+    name: "Steph", slug: "steph", role: "traitor", src: "players/player-12.jpg",
+    death: "Suicide via sugar packet",
+    timeline: [
+      { media: "clip-1.jpg" }
+    ]
+  },
   { name: "Susie", slug: "susie", role: "faithful", src: "players/player-13.jpg" },
   { name: "Nick", slug: "nick", role: "faithful", src: "players/player-14.jpg" },
   { name: "Ardyn", slug: "ardyn", role: "faithful", src: "players/player-15.jpg" },
