@@ -33,7 +33,13 @@ var PLAYERS = [
       { media: "clip-1.jpg" }
     ]
   },
-  { name: "Dew", slug: "dew", role: "faithful", src: "players/player-4.jpg" },
+  {
+    name: "Dew", slug: "dew", role: "faithful", src: "players/player-4.jpg",
+    death: "Banishment",
+    timeline: [
+      { media: "clip-1.jpg" }
+    ]
+  },
   { name: "Kamala", slug: "kamala", role: "faithful", src: "players/player-5.jpg" },
   { name: "Shrey", slug: "shrey", role: "faithful", src: "players/player-6.jpg" },
   { name: "Ash", slug: "ash", role: "traitor", src: "players/player-7.jpg" },
