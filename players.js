@@ -40,10 +40,34 @@ var PLAYERS = [
       { media: "clip-1.jpg" }
     ]
   },
-  { name: "Kamala", slug: "kamala", role: "faithful", src: "players/player-5.jpg" },
-  { name: "Shrey", slug: "shrey", role: "faithful", src: "players/player-6.jpg" },
-  { name: "Ash", slug: "ash", role: "traitor", src: "players/player-7.jpg" },
-  { name: "Erkina", slug: "erkina", role: "faithful", src: "players/player-8.jpg" },
+  {
+    name: "Kamala", slug: "kamala", role: "faithful", src: "players/player-5.jpg",
+    death: "Banishment",
+    timeline: [
+      { media: "clip-1.jpg" }
+    ]
+  },
+  {
+    name: "Shrey", slug: "shrey", role: "faithful", src: "players/player-6.jpg",
+    death: "Banishment",
+    timeline: [
+      { media: "clip-1.jpg" }
+    ]
+  },
+  {
+    name: "Ash", slug: "ash", role: "traitor", src: "players/player-7.jpg",
+    death: "Banishment",
+    timeline: [
+      { media: "clip-1.jpg" }
+    ]
+  },
+  {
+    name: "Erkina", slug: "erkina", role: "faithful", src: "players/player-8.jpg",
+    death: "Banishment",
+    timeline: [
+      { media: "clip-1.jpg" }
+    ]
+  },
   { name: "Phil", slug: "phil", role: "traitor", src: "players/player-9.jpg" },
   { name: "Bailey", slug: "bailey", role: "faithful", src: "players/player-10.jpg" },
   { name: "Ada", slug: "ada", role: "faithful", src: "players/player-11.jpg" },
