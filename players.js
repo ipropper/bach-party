@@ -219,10 +219,8 @@ var ROUNDS = [
   },
   {
     label: "Early night", when: "Saturday",
-    // Bailey is the one banishment Ian did not place in the sequence,
-    // so he is parked with the other early-night votes for now.
-    note: "Steph fails a traitor mission and takes the sugar packet. Shrey and Bailey are voted out.",
-    out: ["steph", "shrey", "bailey"]
+    note: "Steph fails a traitor mission and takes the sugar packet. Shrey is voted out.",
+    out: ["steph", "shrey"]
   },
   {
     label: "The long vote", when: "Saturday",
@@ -251,9 +249,10 @@ var ROUNDS = [
   },
   { label: "The final votes: Sasha", when: "Sunday", note: "Back at the table an hour, and voted straight back out.", out: ["sasha"] },
   { label: "The final votes: Susie", when: "Sunday", note: "The host goes to the vote.", out: ["susie"] },
-  { label: "The final votes: Dew", when: "Sunday", note: "Four left in.", out: ["dew"] },
-  { label: "The final votes: Kushal", when: "Sunday", note: "Three left in.", out: ["kushal"] },
-  { label: "The final votes: Navya", when: "Sunday", note: "Two left in, and one last name on the slate.", out: ["navya"] },
+  { label: "The final votes: Dew", when: "Sunday", note: "The votes are coming quickly now.", out: ["dew"] },
+  { label: "The final votes: Kushal", when: "Sunday", note: "Nobody at this table is safe.", out: ["kushal"] },
+  { label: "The final votes: Navya", when: "Sunday", note: "Another faithful, gone on a wrong read.", out: ["navya"] },
+  { label: "The final votes: Bailey", when: "Sunday", note: "One name left on the slate.", out: ["bailey"] },
   { label: "The final votes: Zac", when: "Sunday", note: "The last traitor at the table, banished.", out: ["zac"] },
   { label: "Faithful victory", when: "Sunday", note: "Dan and Ardyn are the last two standing, and the faithful take it." }
 ];
